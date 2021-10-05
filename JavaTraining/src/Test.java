@@ -12,7 +12,7 @@ class Implementation implements Comparator<Employee>{
 		
 		return (e1.getEname().compareTo(e2.getEname()));
 	}
-
+}
 */
 
 public class Test {
@@ -40,8 +40,7 @@ public class Test {
 		}
 		sc.close();
 		// Collections.sort(list, new Implementation());
-		Collections.sort(list,
-				(e1, e2) -> (e1.getEnumber() > e2.getEnumber()) ? 1 : (e1.getEnumber() < e2.getEnumber()) ? -1 : 0);
+		Collections.sort(list,(e1, e2) -> (e1.getEnumber() > e2.getEnumber()) ? 1 : (e1.getEnumber() < e2.getEnumber()) ? -1 : 0);
 		System.out.println(list);
 
 	}
