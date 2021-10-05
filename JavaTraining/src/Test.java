@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Comparator;
-
+/*
 class Implementation implements Comparator<Employee>{
 
 	@Override
@@ -13,7 +13,7 @@ class Implementation implements Comparator<Employee>{
 	}
 	
 }
-
+*/
 public class Test {
 
 	public static void main(String[] args) {
@@ -38,8 +38,8 @@ public class Test {
 		}
 	}
 		sc.close();
-		Collections.sort(list, new Implementation());
-//Collections.sort(list,(e1,e2)->(e1.getEnumber()>e2.getEnumber())?1:(e1.getEnumber()<e2.getEnumber())?-1:0);
+		//Collections.sort(list, new Implementation());
+		Collections.sort(list,(e1,e2)->(e1.getEnumber()>e2.getEnumber())?1:(e1.getEnumber()<e2.getEnumber())?-1:0);
 		System.out.println(list);
 
 	}
